@@ -1,4 +1,11 @@
 ---
+
+- name: Create {{ admin_group }} group
+  group:
+    name: "{{ admin_group }}"
+    system: yes
+  when: admin_group is defined
+
 - name: Creating groups
   group:
     name: "{{ item.name }}"
