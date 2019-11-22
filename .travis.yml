@@ -28,4 +28,4 @@ before_install:
   - sudo apt-get install --only-upgrade git
 
 script:
-  - ROLE=msaf1980.users ./tests/docker-tests.sh
+  - ./tests/docker-tests.sh
